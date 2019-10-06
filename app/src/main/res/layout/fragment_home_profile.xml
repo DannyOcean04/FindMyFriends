@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeProfileFragment">
+
+    <RelativeLayout
+        android:id="@+id/tophalf"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:background="@drawable/grad"
+        android:paddingBottom="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/defaultprofile" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="User Name"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:layout_centerHorizontal="true"
+                android:text="User Name"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/tophalf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailBar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/user_email"
+                    android:text="Email"
+                    android:textSize="25sp"
+                    />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/emailBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/codeBar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:id="@+id/user_code"
+                android:text="Code"
+                android:textSize="25sp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/codeBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sharingBar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/sharingSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Sharing Location     "
+                android:textOff="Off"
+                android:textOn="On"
+                android:textSize="25sp"
+                android:thumb="@drawable/sw_thumb"
+                app:showText="true"
+                app:track="@drawable/sw_track" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

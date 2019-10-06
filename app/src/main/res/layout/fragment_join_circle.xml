@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.JoinCircleFragment">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="63dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Enter Circle Code to Join"
+            android:layout_alignParentEnd="true"/>
+
+        <com.goodiebag.pinview.Pinview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            app:cursorVisible="true"
+            app:forceKeyboard="true"
+            app:inputType="number"
+            app:pinHeight="40dp"
+            app:pinLength="6"
+            app:pinWidth="35dp"
+            android:id="@+id/pinview"
+            ></com.goodiebag.pinview.Pinview>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pinview"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="60dp"
+            android:onClick="submitButton"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="SUBMIT" />
+
+
+</RelativeLayout>
